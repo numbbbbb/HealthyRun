@@ -1,0 +1,17 @@
+<ion-modal-view ng-controller="MapModalCtrl">
+  <ion-header-bar>
+    <h1 class="title">这个地方如何称呼？</h1>
+  </ion-header-bar>
+  <ion-content>
+    <div class="list list-inset">
+      <label class="item item-input">
+        <input name="pointInput" type="text" placeholder="日常锻炼" ng-model="curPoint.name">
+      </label>
+    </div>
+    <div class="padding">
+      <button class="button button-full button-positive" ng-click="modal.hide()">
+        保存
+      </button>
+    </div>
+  </ion-content>
+</ion-modal-view>

@@ -1,0 +1,25 @@
+<ion-view view-title="Chats">
+  <ion-content>
+    <ion-list>
+      <!--<ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="chat in chats" type="item-text-wrap" href="#/tab/chats/{{chat.id}}">
+        <img ng-src="{{chat.face}}">
+        <h2>{{chat.name}}</h2>
+        <p>{{chat.lastText}}</p>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+
+        <ion-option-button class="button-assertive" ng-click="remove(chat)">
+          Delete
+        </ion-option-button>
+      </ion-item>-->
+      <ion-item class="item-remove-animate item-icon-left item-icon-right" ng-repeat="point in points" type="item-text-wrap">
+        <i class="icon wi {{point.weather.skycon | iconName}}" style="font-size:1em;"></i>
+        <h2>{{point.name}}</h2>
+        <p>{{point.weather.summary}}</p>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+        <ion-option-button class="button-assertive" ng-click="remove(point)">
+          Delete
+        </ion-option-button>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
